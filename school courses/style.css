@@ -1,0 +1,332 @@
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background: #ffffff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    padding: .2rem 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: orange;
+    border: none;
+    outline: none;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex_col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+.nav ul > a, li{
+    margin: 0 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.nav ul li a{
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+:is(.logo, .nav ul li) a:hover{
+    color: orange;
+}
+.nav ul li a i{
+    color: orange;
+    margin-right: .5rem;
+}
+:is(.testimonial, .content){
+    height: 100vh;
+    background: rebeccapurple;
+    position: relative;
+}
+.banner{
+    position: absolute;
+    width: 90vw;
+    height: 100vh;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./images/school1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    z-index: 100;
+}
+.banner h2{
+    color: orange;
+    font-size: 3.5rem;
+    width: 55%;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+.banner .form{
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+.banner .form input{
+    padding: 1rem 3rem;
+    outline: none;
+    background: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+.banner .form input#text{
+    width: 70%;
+}
+.icons{
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    height: 30vh;
+    padding: .5rem;
+}
+.icons a{
+    padding: 1rem 0;
+}
+.icons a i{
+    color: #ffffff;
+}
+ .newLang{
+    height: 100vh;
+    background: #f7f7f7;
+    position: relative;
+}
+.langdet{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 75vh;
+}
+.langdet h2{
+    text-transform: capitalize;
+    text-align: center;
+}
+.dets{
+    width: 100%;
+    height: 90%;
+}
+.det{
+    width: 350px;
+    height: 300px;
+    background: chocolate;
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+.det img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+}
+.det img:hover{
+    transform: scale(1);
+}
+.yourlang{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5vh;
+    width: 100%;
+    background: rebeccapurple;
+    display: grid;
+    place-items: center;
+}
+.yourlang h2{
+    color: #ffffff;
+}
+.testimonial{
+    padding: 2rem;
+}
+:is(.pricing, .testimonial) h2{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    letter-spacing: 1.1px;
+}
+.tsml{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    height: 90vh;
+}
+.test_div{
+    width: 70%;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #00000099;
+    justify-content: space-between;
+    align-items: center;
+}
+.tsml .test_div:nth-child(2){
+    margin-left: auto;
+}
+.tsml .test_div:nth-child(4){
+    margin-left: auto;
+}
+.test_div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+.say{
+    height: 100%;
+    width: 80%;
+}
+.say h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.say p{
+    line-height: 1.5;
+    color: #ffffff;
+}
+.pricing{
+    min-height: 60vh;
+    background: #ffffff;
+    position: relative;
+}
+.pricing h2{
+    color: #000000;
+    padding: .5rem 0;
+}
+.price-box{
+    width: 100%;
+    padding: 1rem;
+}
+.pbox{
+    width: 380px;
+    height: 400px;
+    margin: .5rem;
+    text-align: center;
+    background: rebeccapurple;
+    border-radius: .5rem;
+    color: #ffffff;
+    transition: .3s;
+}
+.pbox:hover{
+    transform: scale(1.03);
+}
+.pbox h2{
+    margin-bottom: 2rem;
+    color: #ffffff;
+    word-break: break-all;
+}
+.pbox span{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.pbox span small{
+    font-size: .9rem;
+}
+.pbox p{
+    margin: 2rem 0;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.pbox .btn-choose{
+    margin-top: 2rem;
+    padding: .9rem 2rem;
+    border-radius: 2rem;
+}
+.letter{
+    min-height: 20vh;
+    background: rebeccapurple;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.newslet h2{
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.newslet p{
+    text-transform: capitalize;
+    padding: .5rem;
+    color: orange;
+}
+.letter .form{
+    width: 50%;
+    padding: 1rem;
+}
+.letter .form input{
+    outline: none;
+    border: none;
+    padding: .9rem 2rem;
+    background: #ffffff;
+    font-size: 1rem;
+    color: #000000;
+    border-radius: 2rem;
+}
+.letter .form input[type=email]{
+    width: 70%;
+}
+footer{
+    height: 5vh;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.upbtn{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: orange;
+    cursor: pointer;
+    display: none;
+}
+.upbtn i{
+    font-size: 1rem;
+    color: #ffffff;
+}
